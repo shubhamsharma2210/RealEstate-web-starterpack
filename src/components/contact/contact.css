@@ -1,0 +1,72 @@
+.c-container{
+    justify-content: space-around;
+
+}
+.c-container>div{
+    flex: 1;
+}
+.c-right{
+    width: 100%;
+}
+.c-left{
+    gap: 0.5rem;
+}
+.contactMode{
+    margin-top: 2rem;
+    gap: 1rem;
+
+}
+.contactMode .row{
+    gap: 1.5rem;
+}
+.mode{
+    width: 16rem;
+    padding: 1rem;
+    border: 4px solid rgba(39, 39, 39, 0.143);
+    border-radius: 0.8rem;
+    gap: 1rem;
+    transition: all 300ms ease-in;
+}
+.mode .button{
+    width: 100%;
+    background: var(--lightBlue);
+    color: var(--blue);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.mode >:nth-child(1) {
+    width: 100%;
+    gap: 1.6rem;
+}
+.mode .ddetails .primaryText{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.mode:hover{
+    scale: 1.1;
+    box-shadow: var(--shadow);
+}
+.mode .button:hover{
+    background: var(--blue-gradient);
+    color: white;
+    scale: 0.8;
+}
+
+@media (max-width:1024px) {
+    .c-container{
+        flex-direction: column;
+    }
+    .c-right{
+        justify-content: center;
+    }
+    .contactMode{
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+        width: 100%;
+    }
+    .mode{
+        width: 100%;
+    }
+}

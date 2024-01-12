@@ -1,0 +1,52 @@
+.prop-container{
+    gap: 2rem;
+    position: relative;
+}
+.prop-container .like{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+
+}
+.prop-container>img{
+    align-self: center;
+    /* max-width: 55rem; */
+    max-height: 32rem;
+    width: 100%;
+    object-fit: cover;
+
+
+}
+.prop-details{
+    width: 100%;
+    gap: 2rem;
+    justify-content: space-between;
+
+}
+.prop-details div{
+    flex: 1;
+    gap: 1.5rem;
+}
+.prop-details .prop-left .head{
+    width: 100%;
+    justify-content: space-between;
+
+}
+.facilities{
+    gap: 2rem;
+    font-size: 1rem;
+    padding: 0.1rem;
+
+
+}
+.facilities .eachFacility{
+    gap: 0.7rem;
+    
+
+}
+.prop-details .button{
+    width: 100%;
+}
+.prop-details .button:hover{
+    transform: scale(1.05);
+}

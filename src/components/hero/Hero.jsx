@@ -1,9 +1,9 @@
 import "./hero.css";
-import { HiLocationMarker } from "react-icons/hi";
 import React from "react";
-import heroImage from "../../../public/hero-image.png";
+// import heroImage from "../../../public/hero-image.png";
 import CountUp from "react-countup";
 import { motion, spring } from "framer-motion";
+import SearchBar from "../searchbar/SearchBar";
 const Hero = () => {
   return (
     <section className="hero-wrapper">
@@ -14,10 +14,7 @@ const Hero = () => {
             <motion.h1
               initial={{ y: "2rem", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={
-                {duration: 4,
-                type: 'spring'}
-              }
+              transition={{ duration: 4, type: "spring" }}
               type={spring}
             >
               Discover <br /> Most Suitable <br />
@@ -32,11 +29,7 @@ const Hero = () => {
               Forget all difficulties in finding a residence for you
             </span>
           </div>
-          <div className="flexCenter search-bar">
-            <HiLocationMarker color="var(--blue)" size={25} />
-            <input type="text" />
-            <button className="button"> Search</button>
-          </div>
+          <SearchBar />
           <div className="flexCenter stats">
             <div className="flexColCenter stat">
               <span>
@@ -62,15 +55,16 @@ const Hero = () => {
           </div>
         </div>
         <div className="flexCenter  hero-right">
-          <motion.div 
-          initial={{x:'7rem' , opacity: 0}}
-          animate={{x:0 , opacity: 1}}
-          transition={{
-            duration:4,
-            type:'spring'
-          }}
-          className="image-container">
-            <img src={heroImage} alt="" />
+          <motion.div
+            initial={{ x: "7rem", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              duration: 4,
+              type: "spring",
+            }}
+            className="image-container"
+          >
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/230745315.jpg?k=c3e659d9cd526f23031e2fb0e17039334ba2d6eb6fabc7c425e49e7c803bf464&o=&hp=1" alt="" />
           </motion.div>
         </div>
       </div>
